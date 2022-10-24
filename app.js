@@ -1,9 +1,23 @@
 let age = 23;
+let userName = "Maja";
+let hobbies = ["Cycling", "Drawing", "Video games"];
 
-let greetingText = "Hej det här är Frank!";
-alert(greetingText);
+let job = {
+  title: "Developer",
+  place: "Stockholm",
+  salary: 1000000000000,
+};
 
-greetingText = "Jagba skK! det är Maja";
-alert(greetingText);
+let adultYears;
 
-alert(age);
+function calculateAdultYears(userAge) {
+  return userAge - 18;
+}
+
+adultYears = calculateAdultYears(age);
+alert(adultYears);
+
+age = 45;
+adultYears = calculateAdultYears(age);
+
+alert(adultYears);
